@@ -11,7 +11,6 @@ const Routes = () => {
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes>
-        {/* Define your route here */}
         <Route path="/" element={<ProfessionalDeveloperPortfolioLandingPage />} />
         <Route path="/professional-developer-portfolio-landing-page" element={<ProfessionalDeveloperPortfolioLandingPage />} />
         <Route path="*" element={<NotFound />} />

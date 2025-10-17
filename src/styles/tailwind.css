@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #1a1a2e; /* dark navy */
+    --color-foreground: #FFFFFF; /* white */
+    --color-card: #16213e; /* surface dark blue */
+    --color-card-foreground: #FFFFFF; /* white */
+    --color-popover: #16213e; /* surface dark blue */
+    --color-popover-foreground: #FFFFFF; /* white */
+    --color-muted: #16213e; /* surface dark blue */
+    --color-muted-foreground: #B8C5D6; /* light gray-blue */
+    
+    /* Primary Colors */
+    --color-primary: #4A9EFF; /* bright blue */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #6B7FFF; /* purple-blue */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #00D4FF; /* cyan */
+    --color-accent-foreground: #1a1a2e; /* dark navy */
+    
+    /* State Colors */
+    --color-success: #00FF88; /* bright green */
+    --color-success-foreground: #1a1a2e; /* dark navy */
+    --color-warning: #FFB800; /* amber */
+    --color-warning-foreground: #1a1a2e; /* dark navy */
+    --color-error: #FF4757; /* red */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #FF4757; /* red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* UI Elements */
+    --color-border: rgba(74, 158, 255, 0.2); /* primary with opacity */
+    --color-input: #16213e; /* surface dark blue */
+    --color-ring: #4A9EFF; /* bright blue */
+    
+    /* Radius */
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .cta-shadow {
+    box-shadow: 0 4px 20px rgba(74, 158, 255, 0.15);
+  }
+  
+  .card-shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  .backdrop-blur-nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
